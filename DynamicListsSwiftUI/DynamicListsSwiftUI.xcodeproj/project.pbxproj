@@ -105,6 +105,7 @@
 		CB01583E23FF31B200229758 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CB42C8A924042CD80067280E /* AudioRecording */,
 				CB01583F23FF31E800229758 /* Emotion.swift */,
 			);
 			path = Model;
@@ -133,6 +134,8 @@
 		CB2D1B5C23E50FEF008BEFAF /* DynamicListsSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				CB42C8AA24042CE10067280E /* ViewModels */,
+				CB42C8A624042C730067280E /* Views */,
 				CB01583E23FF31B200229758 /* Model */,
 				CB2D1B5D23E50FEF008BEFAF /* AppDelegate.swift */,
 				CB2D1B5F23E50FEF008BEFAF /* SceneDelegate.swift */,
@@ -181,6 +184,43 @@
 				CB2D1B8123E50FF4008BEFAF /* Info.plist */,
 			);
 			path = DynamicListsSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		CB42C8A624042C730067280E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB42C8A824042CC90067280E /* AudioRecording */,
+				CB42C8A724042CC00067280E /* ViewComponents */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CB42C8A724042CC00067280E /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		CB42C8A824042CC90067280E /* AudioRecording */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AudioRecording;
+			sourceTree = "<group>";
+		};
+		CB42C8A924042CD80067280E /* AudioRecording */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AudioRecording;
+			sourceTree = "<group>";
+		};
+		CB42C8AA24042CE10067280E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
