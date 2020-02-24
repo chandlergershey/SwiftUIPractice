@@ -19,7 +19,7 @@ struct DescribeMoodView: View {
             //Color(.black).edgesIgnoringSafeArea(.all)
             VStack{
                 Text("Tap to record").font(.title).fontWeight(.bold).foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))).multilineTextAlignment(.center).padding()
-                Spacer()
+                //Spacer()
                 ZStack{
                     
                     Circle().frame(width: 300, height: 300).foregroundColor(Color(#colorLiteral(red: 1, green: 0.06869401783, blue: 0.1258047819, alpha: 1))).scaleEffect(animateSkyColor ? 1 : 1.1).animation(Animation.easeInOut(duration: 0.5).repeatForever(autoreverses: true).speed(1.1)).onAppear() {
