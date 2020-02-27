@@ -141,15 +141,6 @@
 				CB01583E23FF31B200229758 /* Model */,
 				CB2D1B5D23E50FEF008BEFAF /* AppDelegate.swift */,
 				CB2D1B5F23E50FEF008BEFAF /* SceneDelegate.swift */,
-				CB42C8AD240430C60067280E /* TabBarView.swift */,
-				CB2D1B6123E50FEF008BEFAF /* ContentView.swift */,
-				CB6808A423EBF70400768F7D /* GivePermissionsView.swift */,
-				CB3F177523EA985F00095FD7 /* SelectMoodView.swift */,
-				CB5642AE23FF19FE0026B004 /* SelectMoodOfficialView.swift */,
-				CB01583C23FF304500229758 /* SelectEmotionView.swift */,
-				CBA31BFD23EAABF5004F5EDA /* DescribeMoodView.swift */,
-				CBC54E7E240393CA00640A87 /* AudioHelper.swift */,
-				CBC54E7A240338D900640A87 /* Extensions.swift */,
 				CB2D1B6323E50FF4008BEFAF /* Assets.xcassets */,
 				CB2D1B6823E50FF4008BEFAF /* LaunchScreen.storyboard */,
 				CB2D1B6B23E50FF4008BEFAF /* Info.plist */,
@@ -187,6 +178,10 @@
 		CB42C8A624042C730067280E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CB720B35240871A7006C4C87 /* ContentView */,
+				CB720B342408717C006C4C87 /* Authentication */,
+				CB720B3324087158006C4C87 /* MoodEntry */,
+				CB720B322408712C006C4C87 /* TabBar */,
 				CB42C8A824042CC90067280E /* AudioRecording */,
 				CB42C8A724042CC00067280E /* ViewComponents */,
 			);
@@ -205,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				CBC54E76240320DD00640A87 /* RecordingView.swift */,
+				CBA31BFD23EAABF5004F5EDA /* DescribeMoodView.swift */,
 			);
 			path = AudioRecording;
 			sourceTree = "<group>";
@@ -212,7 +208,9 @@
 		CB42C8A924042CD80067280E /* AudioRecording */ = {
 			isa = PBXGroup;
 			children = (
+				CBC54E7E240393CA00640A87 /* AudioHelper.swift */,
 				CBC54E7C2403924100640A87 /* RecordingDataModel.swift */,
+				CBC54E7A240338D900640A87 /* Extensions.swift */,
 			);
 			path = AudioRecording;
 			sourceTree = "<group>";
@@ -240,6 +238,40 @@
 				CBC54E802403974000640A87 /* AudioPlayer.swift */,
 			);
 			path = AudioManagers;
+			sourceTree = "<group>";
+		};
+		CB720B322408712C006C4C87 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				CB42C8AD240430C60067280E /* TabBarView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		CB720B3324087158006C4C87 /* MoodEntry */ = {
+			isa = PBXGroup;
+			children = (
+				CB3F177523EA985F00095FD7 /* SelectMoodView.swift */,
+				CB5642AE23FF19FE0026B004 /* SelectMoodOfficialView.swift */,
+				CB01583C23FF304500229758 /* SelectEmotionView.swift */,
+			);
+			path = MoodEntry;
+			sourceTree = "<group>";
+		};
+		CB720B342408717C006C4C87 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				CB6808A423EBF70400768F7D /* GivePermissionsView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		CB720B35240871A7006C4C87 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				CB2D1B6123E50FEF008BEFAF /* ContentView.swift */,
+			);
+			path = ContentView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
