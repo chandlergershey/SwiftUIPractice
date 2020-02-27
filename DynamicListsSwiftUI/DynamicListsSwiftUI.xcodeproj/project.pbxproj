@@ -18,7 +18,7 @@
 		CB2D1B7523E50FF4008BEFAF /* DynamicListsSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2D1B7423E50FF4008BEFAF /* DynamicListsSwiftUITests.swift */; };
 		CB2D1B8023E50FF4008BEFAF /* DynamicListsSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2D1B7F23E50FF4008BEFAF /* DynamicListsSwiftUIUITests.swift */; };
 		CB3F177623EA985F00095FD7 /* SelectMoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3F177523EA985F00095FD7 /* SelectMoodView.swift */; };
-		CB42C8AE240430C60067280E /* TabBarViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB42C8AD240430C60067280E /* TabBarViewComponent.swift */; };
+		CB42C8AE240430C60067280E /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB42C8AD240430C60067280E /* TabBarView.swift */; };
 		CB5642AF23FF19FE0026B004 /* SelectMoodOfficialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5642AE23FF19FE0026B004 /* SelectMoodOfficialView.swift */; };
 		CB6808A523EBF70400768F7D /* GivePermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6808A423EBF70400768F7D /* GivePermissionsView.swift */; };
 		CBA31BFE23EAABF5004F5EDA /* DescribeMoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA31BFD23EAABF5004F5EDA /* DescribeMoodView.swift */; };
@@ -66,7 +66,7 @@
 		CB2D1B7F23E50FF4008BEFAF /* DynamicListsSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicListsSwiftUIUITests.swift; sourceTree = "<group>"; };
 		CB2D1B8123E50FF4008BEFAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB3F177523EA985F00095FD7 /* SelectMoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMoodView.swift; sourceTree = "<group>"; };
-		CB42C8AD240430C60067280E /* TabBarViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewComponent.swift; sourceTree = "<group>"; };
+		CB42C8AD240430C60067280E /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		CB5642AE23FF19FE0026B004 /* SelectMoodOfficialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMoodOfficialView.swift; sourceTree = "<group>"; };
 		CB6808A423EBF70400768F7D /* GivePermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GivePermissionsView.swift; sourceTree = "<group>"; };
 		CBA31BFD23EAABF5004F5EDA /* DescribeMoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescribeMoodView.swift; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 				CB01583E23FF31B200229758 /* Model */,
 				CB2D1B5D23E50FEF008BEFAF /* AppDelegate.swift */,
 				CB2D1B5F23E50FEF008BEFAF /* SceneDelegate.swift */,
-				CB42C8AD240430C60067280E /* TabBarViewComponent.swift */,
+				CB42C8AD240430C60067280E /* TabBarView.swift */,
 				CB2D1B6123E50FEF008BEFAF /* ContentView.swift */,
 				CB6808A423EBF70400768F7D /* GivePermissionsView.swift */,
 				CB3F177523EA985F00095FD7 /* SelectMoodView.swift */,
@@ -222,8 +222,16 @@
 		CB42C8AA24042CE10067280E /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				CB720B30240863C2006C4C87 /* AudioRecording */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CB720B30240863C2006C4C87 /* AudioRecording */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AudioRecording;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,7 +381,7 @@
 				CB5642AF23FF19FE0026B004 /* SelectMoodOfficialView.swift in Sources */,
 				CB2D1B6023E50FEF008BEFAF /* SceneDelegate.swift in Sources */,
 				CB2D1B6223E50FEF008BEFAF /* ContentView.swift in Sources */,
-				CB42C8AE240430C60067280E /* TabBarViewComponent.swift in Sources */,
+				CB42C8AE240430C60067280E /* TabBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

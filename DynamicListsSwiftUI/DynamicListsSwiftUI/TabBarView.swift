@@ -1,5 +1,5 @@
 //
-//  TabBarViewComponent.swift
+//  TabBarView.swift
 //  DynamicListsSwiftUI
 //
 //  Created by Chandler Gerstenslager on 2/24/20.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct TabBarViewComponent: View {
+struct TabBarView: View {
     var body: some View {
         TabView {
             CalendarView().tabItem {
@@ -17,7 +17,7 @@ struct TabBarViewComponent: View {
                     Text("Calendar")
                 }
             }.tag(0)
-            HelpView().tabItem {
+            SelectEmotionView().tabItem {
                 VStack {
                     Image(systemName: "bandage")
                     Text("Help")
@@ -29,13 +29,13 @@ struct TabBarViewComponent: View {
                     Text("Add Mood")
                 }
             }.tag(2)
-            TrendsView().tabItem {
+            DescribeMoodView().tabItem {
                 VStack {
                     Image(systemName: "circle.grid.hex")
                     Text("Trends")
                 }
             }.tag(3)
-            ProfileView().tabItem {
+            AudioRecorder2View(audioRecorder: AudioRecorder()).tabItem {
                 VStack {
                     Image(systemName: "person")
                     Text("Profile")
@@ -45,9 +45,9 @@ struct TabBarViewComponent: View {
     }
 }
 
-struct TabBarViewComponent_Previews: PreviewProvider {
+struct TabBarView_Previews: PreviewProvider {
     static var previews: some View {
-        TabBarViewComponent()
+        TabBarView().navigationBarHidden(true)
     }
 }
 

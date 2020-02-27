@@ -20,7 +20,8 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                NavigationLink(destination: AudioRecorder2View(audioRecorder: AudioRecorder()).navigationBarTitle(Text("x")).navigationBarHidden(true), tag: 1, selection: self.$selection){
+                // AudioRecorder2View(audioRecorder: AudioRecorder())
+                NavigationLink(destination: TabBarView().navigationBarHidden(true), tag: 1, selection: self.$selection){
                     Text("")
                 }
                 Button(action: {
@@ -28,13 +29,13 @@ struct ContentView: View {
                 }) {
                     Text("Sign In").fontWeight(.bold).font(.title).padding().background(Color.white).cornerRadius(40).foregroundColor(.purple).padding(3).overlay(RoundedRectangle(cornerRadius: 40).stroke(Color.purple, lineWidth: 5))
                 }.accessibility(identifier: "goToSelectMood")
-                HStack {
-                    Text("Give permission?")
-                    Toggle(isOn: self.$permissionsEnabled) {
-                        Text("")
-                        }.labelsHidden().accessibility(identifier: "permissionsEnabledToggle")
-                    Text(self.permissionsEnabled ? "ON" : "OFF").accessibility(identifier: "permissionsEnabledText")
-                }
+//                HStack {
+//                    Text("Give permission?")
+//                    Toggle(isOn: self.$permissionsEnabled) {
+//                        Text("")
+//                        }.labelsHidden().accessibility(identifier: "permissionsEnabledToggle")
+//                    Text(self.permissionsEnabled ? "ON" : "OFF").accessibility(identifier: "permissionsEnabledText")
+//                }
             }
             
         }
