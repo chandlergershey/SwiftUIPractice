@@ -10,7 +10,7 @@ import SwiftUI
 
 
 
-struct AudioRecorder2View: View {
+struct RecordingView: View {
     
     @ObservedObject var audioRecorder: AudioRecorder
     
@@ -34,7 +34,7 @@ struct AudioRecorder2View: View {
 
 struct AudioRecorder2View_Previews: PreviewProvider {
     static var previews: some View {
-        AudioRecorder2View(audioRecorder: AudioRecorder())
+        RecordingView(audioRecorder: AudioRecorder())
         // may need to "do the scenedelegate.swift stuff"
     }
 }

@@ -23,7 +23,7 @@
 		CB6808A523EBF70400768F7D /* GivePermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6808A423EBF70400768F7D /* GivePermissionsView.swift */; };
 		CBA31BFE23EAABF5004F5EDA /* DescribeMoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA31BFD23EAABF5004F5EDA /* DescribeMoodView.swift */; };
 		CBC54E7524031F6500640A87 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC54E7424031F6500640A87 /* AudioRecorder.swift */; };
-		CBC54E77240320DD00640A87 /* AudioRecorder2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC54E76240320DD00640A87 /* AudioRecorder2View.swift */; };
+		CBC54E77240320DD00640A87 /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC54E76240320DD00640A87 /* RecordingView.swift */; };
 		CBC54E79240323D500640A87 /* RecordingsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC54E78240323D500640A87 /* RecordingsList.swift */; };
 		CBC54E7B240338D900640A87 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC54E7A240338D900640A87 /* Extensions.swift */; };
 		CBC54E7D2403924100640A87 /* RecordingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC54E7C2403924100640A87 /* RecordingDataModel.swift */; };
@@ -71,7 +71,7 @@
 		CB6808A423EBF70400768F7D /* GivePermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GivePermissionsView.swift; sourceTree = "<group>"; };
 		CBA31BFD23EAABF5004F5EDA /* DescribeMoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescribeMoodView.swift; sourceTree = "<group>"; };
 		CBC54E7424031F6500640A87 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
-		CBC54E76240320DD00640A87 /* AudioRecorder2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder2View.swift; sourceTree = "<group>"; };
+		CBC54E76240320DD00640A87 /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
 		CBC54E78240323D500640A87 /* RecordingsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsList.swift; sourceTree = "<group>"; };
 		CBC54E7A240338D900640A87 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CBC54E7C2403924100640A87 /* RecordingDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingDataModel.swift; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 				CBC54E7424031F6500640A87 /* AudioRecorder.swift */,
 				CBC54E7E240393CA00640A87 /* AudioHelper.swift */,
 				CBC54E7A240338D900640A87 /* Extensions.swift */,
-				CBC54E76240320DD00640A87 /* AudioRecorder2View.swift */,
+				CBC54E76240320DD00640A87 /* RecordingView.swift */,
 				CBC54E7C2403924100640A87 /* RecordingDataModel.swift */,
 				CBC54E78240323D500640A87 /* RecordingsList.swift */,
 				CBC54E802403974000640A87 /* AudioPlayer.swift */,
@@ -369,7 +369,7 @@
 				CB2D1B5E23E50FEF008BEFAF /* AppDelegate.swift in Sources */,
 				CB3F177623EA985F00095FD7 /* SelectMoodView.swift in Sources */,
 				CBC54E79240323D500640A87 /* RecordingsList.swift in Sources */,
-				CBC54E77240320DD00640A87 /* AudioRecorder2View.swift in Sources */,
+				CBC54E77240320DD00640A87 /* RecordingView.swift in Sources */,
 				CB6808A523EBF70400768F7D /* GivePermissionsView.swift in Sources */,
 				CBC54E7524031F6500640A87 /* AudioRecorder.swift in Sources */,
 				CBA31BFE23EAABF5004F5EDA /* DescribeMoodView.swift in Sources */,

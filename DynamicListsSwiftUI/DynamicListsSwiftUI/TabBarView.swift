@@ -35,7 +35,7 @@ struct TabBarView: View {
                     Text("Trends")
                 }
             }.tag(3)
-            AudioRecorder2View(audioRecorder: AudioRecorder()).tabItem {
+            RecordingView(audioRecorder: AudioRecorder()).tabItem {
                 VStack {
                     Image(systemName: "person")
                     Text("Profile")
