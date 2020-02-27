@@ -17,7 +17,7 @@ struct RecordingView: View {
     var body: some View {
         NavigationView{
             VStack{
-                RecordingsList(audioRecorder: audioRecorder)
+                RecordingListViewComponent(audioRecorder: audioRecorder)
                 if audioRecorder.recording == false {
                     Button(action: {self.audioRecorder.startRecording()}) {
                         Image(systemName: "circle.fill").resizable().aspectRatio(contentMode: .fill).frame(width: 100, height: 100).clipped().foregroundColor(.red).padding(.bottom, 40)
