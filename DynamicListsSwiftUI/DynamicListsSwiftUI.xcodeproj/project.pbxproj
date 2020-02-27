@@ -148,13 +148,8 @@
 				CB5642AE23FF19FE0026B004 /* SelectMoodOfficialView.swift */,
 				CB01583C23FF304500229758 /* SelectEmotionView.swift */,
 				CBA31BFD23EAABF5004F5EDA /* DescribeMoodView.swift */,
-				CBC54E7424031F6500640A87 /* AudioRecorder.swift */,
 				CBC54E7E240393CA00640A87 /* AudioHelper.swift */,
 				CBC54E7A240338D900640A87 /* Extensions.swift */,
-				CBC54E76240320DD00640A87 /* RecordingView.swift */,
-				CBC54E7C2403924100640A87 /* RecordingDataModel.swift */,
-				CBC54E78240323D500640A87 /* RecordingListViewComponent.swift */,
-				CBC54E802403974000640A87 /* AudioPlayer.swift */,
 				CB2D1B6323E50FF4008BEFAF /* Assets.xcassets */,
 				CB2D1B6823E50FF4008BEFAF /* LaunchScreen.storyboard */,
 				CB2D1B6B23E50FF4008BEFAF /* Info.plist */,
@@ -201,6 +196,7 @@
 		CB42C8A724042CC00067280E /* ViewComponents */ = {
 			isa = PBXGroup;
 			children = (
+				CBC54E78240323D500640A87 /* RecordingListViewComponent.swift */,
 			);
 			path = ViewComponents;
 			sourceTree = "<group>";
@@ -208,6 +204,7 @@
 		CB42C8A824042CC90067280E /* AudioRecording */ = {
 			isa = PBXGroup;
 			children = (
+				CBC54E76240320DD00640A87 /* RecordingView.swift */,
 			);
 			path = AudioRecording;
 			sourceTree = "<group>";
@@ -215,6 +212,7 @@
 		CB42C8A924042CD80067280E /* AudioRecording */ = {
 			isa = PBXGroup;
 			children = (
+				CBC54E7C2403924100640A87 /* RecordingDataModel.swift */,
 			);
 			path = AudioRecording;
 			sourceTree = "<group>";
@@ -230,8 +228,18 @@
 		CB720B30240863C2006C4C87 /* AudioRecording */ = {
 			isa = PBXGroup;
 			children = (
+				CB720B3124086FF4006C4C87 /* AudioManagers */,
 			);
 			path = AudioRecording;
+			sourceTree = "<group>";
+		};
+		CB720B3124086FF4006C4C87 /* AudioManagers */ = {
+			isa = PBXGroup;
+			children = (
+				CBC54E7424031F6500640A87 /* AudioRecorder.swift */,
+				CBC54E802403974000640A87 /* AudioPlayer.swift */,
+			);
+			path = AudioManagers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
