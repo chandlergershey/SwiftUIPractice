@@ -21,6 +21,8 @@
 		CB42C8AE240430C60067280E /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB42C8AD240430C60067280E /* TabBarView.swift */; };
 		CB5642AF23FF19FE0026B004 /* SelectMoodOfficialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5642AE23FF19FE0026B004 /* SelectMoodOfficialView.swift */; };
 		CB6808A523EBF70400768F7D /* GivePermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6808A423EBF70400768F7D /* GivePermissionsView.swift */; };
+		CB98F6EE240B42730059C4EA /* TabBarUpdatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB98F6ED240B42730059C4EA /* TabBarUpdatedView.swift */; };
+		CB98F6F0240B46520059C4EA /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB98F6EF240B46520059C4EA /* ViewRouter.swift */; };
 		CBA31BFE23EAABF5004F5EDA /* DescribeMoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA31BFD23EAABF5004F5EDA /* DescribeMoodView.swift */; };
 		CBC54E7524031F6500640A87 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC54E7424031F6500640A87 /* AudioRecorder.swift */; };
 		CBC54E77240320DD00640A87 /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC54E76240320DD00640A87 /* RecordingView.swift */; };
@@ -69,6 +71,8 @@
 		CB42C8AD240430C60067280E /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		CB5642AE23FF19FE0026B004 /* SelectMoodOfficialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMoodOfficialView.swift; sourceTree = "<group>"; };
 		CB6808A423EBF70400768F7D /* GivePermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GivePermissionsView.swift; sourceTree = "<group>"; };
+		CB98F6ED240B42730059C4EA /* TabBarUpdatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarUpdatedView.swift; sourceTree = "<group>"; };
+		CB98F6EF240B46520059C4EA /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		CBA31BFD23EAABF5004F5EDA /* DescribeMoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescribeMoodView.swift; sourceTree = "<group>"; };
 		CBC54E7424031F6500640A87 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
 		CBC54E76240320DD00640A87 /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
@@ -270,6 +274,8 @@
 			isa = PBXGroup;
 			children = (
 				CB2D1B6123E50FEF008BEFAF /* ContentView.swift */,
+				CB98F6ED240B42730059C4EA /* TabBarUpdatedView.swift */,
+				CB98F6EF240B46520059C4EA /* ViewRouter.swift */,
 			);
 			path = ContentView;
 			sourceTree = "<group>";
@@ -415,6 +421,8 @@
 				CBA31BFE23EAABF5004F5EDA /* DescribeMoodView.swift in Sources */,
 				CBC54E7B240338D900640A87 /* Extensions.swift in Sources */,
 				CBC54E7F240393CA00640A87 /* AudioHelper.swift in Sources */,
+				CB98F6EE240B42730059C4EA /* TabBarUpdatedView.swift in Sources */,
+				CB98F6F0240B46520059C4EA /* ViewRouter.swift in Sources */,
 				CBC54E7D2403924100640A87 /* RecordingDataModel.swift in Sources */,
 				CBC54E812403974000640A87 /* AudioPlayer.swift in Sources */,
 				CB01584023FF31E800229758 /* Emotion.swift in Sources */,

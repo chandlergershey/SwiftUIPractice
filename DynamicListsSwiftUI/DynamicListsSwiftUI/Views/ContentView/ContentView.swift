@@ -21,7 +21,7 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 // AudioRecorder2View(audioRecorder: AudioRecorder())
-                NavigationLink(destination: TabBarView().navigationBarHidden(true), tag: 1, selection: self.$selection){
+                NavigationLink(destination: TabBarUpdatedView().navigationBarHidden(true), tag: 1, selection: self.$selection){
                     Text("")
                 }
                 Button(action: {
