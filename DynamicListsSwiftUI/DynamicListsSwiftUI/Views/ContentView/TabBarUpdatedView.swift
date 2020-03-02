@@ -10,6 +10,7 @@ import SwiftUI
 
 struct TabBarUpdatedView: View {
     @ObservedObject var viewRouter = ViewRouter()
+    @State var singleIsPresented = false
     
     var body: some View {
         GeometryReader { geometry in
@@ -21,9 +22,11 @@ struct TabBarUpdatedView: View {
                     OfficialCalendarView()
                 } else if self.viewRouter.currentView == "bandage" {
                     Text("Bandage")
-                } else if self.viewRouter.currentView == "mood"{
+                }
+                else if self.viewRouter.currentView == "mood"{
                     SelectMoodOfficialView()
-                } else if self.viewRouter.currentView == "trends" {
+                }
+                else if self.viewRouter.currentView == "trends" {
                     CalendarListView()
                 } else if self.viewRouter.currentView == "profile" {
                     Text("Profile")
@@ -44,12 +47,42 @@ struct TabBarUpdatedView: View {
                     }
                     
                     // Add Mood Tab
+                    
+                    
+/*
                     ZStack {
                     Circle().foregroundColor(Color.white).frame(width: 60, height: 60)
                         Image(systemName: "plus.circle.fill").resizable().aspectRatio(contentMode: .fit).frame(width: 60, height: 60).foregroundColor(.blue).onTapGesture {
                             self.viewRouter.currentView = "mood"
                         }
                     }.offset(y: -geometry.size.height/10/2)
+*/
+                    
+                    
+                    
+
+                    Button(action: { self.singleIsPresented.toggle() }) {
+                        Image(systemName: "plus.circle.fill").padding().background(Color.blue).clipShape(Circle()).font(.largeTitle).foregroundColor(.white)
+                    }.sheet(isPresented: self.$singleIsPresented){
+                        SelectMoodOfficialView()
+                    }
+ 
+                    
+                    
+                    
+                    
+/*
+                     
+                     
+                     Button(action: { self.singleIsPresented.toggle() }) {
+                         Text("Example 1 - Single Date Selection").foregroundColor(.blue)
+                     }
+                     .sheet(isPresented: self.$singleIsPresented, content: {
+                         RKViewController(isPresented: self.$singleIsPresented, rkManager: self.rkManager1)})
+*/
+                    
+                    
+                    
                     
                     // Trends Tab
                     Image(systemName: "circle.grid.hex").resizable().aspectRatio(contentMode: .fit).padding(20).frame(width: geometry.size.width/5, height: 75).foregroundColor(self.viewRouter.currentView == "trends" ? .blue : .black).onTapGesture {
@@ -61,8 +94,8 @@ struct TabBarUpdatedView: View {
                         self.viewRouter.currentView = "profile"
                     }
                     
-                }.frame(width: geometry.size.width, height: geometry.size.height/10).background(Color.white.shadow(radius: CGFloat(2.0)))
-            }.edgesIgnoringSafeArea(.bottom)
+                }.frame(width: geometry.size.width, height: geometry.size.height/10).background(Color.white.shadow(radius: CGFloat(2.0))).padding(.bottom, 15)
+                }.edgesIgnoringSafeArea(.bottom)
         }
     }
 }
