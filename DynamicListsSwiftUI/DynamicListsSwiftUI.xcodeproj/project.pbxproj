@@ -27,6 +27,14 @@
 		CB98F6F5240B59D20059C4EA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB98F6F4240B59D20059C4EA /* LoginView.swift */; };
 		CB98F6F8240B5EDA0059C4EA /* OldContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB98F6F7240B5EDA0059C4EA /* OldContentView.swift */; };
 		CB98F6FB240CA2180059C4EA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB98F6FA240CA2180059C4EA /* SettingsView.swift */; };
+		CB98F6FF240CA3790059C4EA /* RKDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB98F6FE240CA3790059C4EA /* RKDate.swift */; };
+		CB98F701240CA38D0059C4EA /* RKCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB98F700240CA38D0059C4EA /* RKCell.swift */; };
+		CB98F703240CA3B90059C4EA /* RKWeekdayHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB98F702240CA3B90059C4EA /* RKWeekdayHeader.swift */; };
+		CB98F705240CA3D00059C4EA /* RKMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB98F704240CA3D00059C4EA /* RKMonth.swift */; };
+		CB98F707240CA3DF0059C4EA /* RKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB98F706240CA3DF0059C4EA /* RKViewController.swift */; };
+		CB98F709240CA3EE0059C4EA /* RKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB98F708240CA3EE0059C4EA /* RKManager.swift */; };
+		CB98F70B240CA4010059C4EA /* RKColorSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB98F70A240CA4010059C4EA /* RKColorSettings.swift */; };
+		CB98F70F240CA54D0059C4EA /* OfficialCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB98F70E240CA54D0059C4EA /* OfficialCalendarView.swift */; };
 		CBA31BFE23EAABF5004F5EDA /* DescribeMoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA31BFD23EAABF5004F5EDA /* DescribeMoodView.swift */; };
 		CBC54E7524031F6500640A87 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC54E7424031F6500640A87 /* AudioRecorder.swift */; };
 		CBC54E77240320DD00640A87 /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC54E76240320DD00640A87 /* RecordingView.swift */; };
@@ -35,6 +43,8 @@
 		CBC54E7D2403924100640A87 /* RecordingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC54E7C2403924100640A87 /* RecordingDataModel.swift */; };
 		CBC54E7F240393CA00640A87 /* AudioHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC54E7E240393CA00640A87 /* AudioHelper.swift */; };
 		CBC54E812403974000640A87 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC54E802403974000640A87 /* AudioPlayer.swift */; };
+		CBCEC9E6240CC36200CFD004 /* SuperHelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCEC9E5240CC36200CFD004 /* SuperHelpView.swift */; };
+		CBCEC9E8240CC81600CFD004 /* CalendarListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCEC9E7240CC81600CFD004 /* CalendarListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +91,14 @@
 		CB98F6F4240B59D20059C4EA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		CB98F6F7240B5EDA0059C4EA /* OldContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldContentView.swift; sourceTree = "<group>"; };
 		CB98F6FA240CA2180059C4EA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CB98F6FE240CA3790059C4EA /* RKDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKDate.swift; sourceTree = "<group>"; };
+		CB98F700240CA38D0059C4EA /* RKCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKCell.swift; sourceTree = "<group>"; };
+		CB98F702240CA3B90059C4EA /* RKWeekdayHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKWeekdayHeader.swift; sourceTree = "<group>"; };
+		CB98F704240CA3D00059C4EA /* RKMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKMonth.swift; sourceTree = "<group>"; };
+		CB98F706240CA3DF0059C4EA /* RKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKViewController.swift; sourceTree = "<group>"; };
+		CB98F708240CA3EE0059C4EA /* RKManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKManager.swift; sourceTree = "<group>"; };
+		CB98F70A240CA4010059C4EA /* RKColorSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKColorSettings.swift; sourceTree = "<group>"; };
+		CB98F70E240CA54D0059C4EA /* OfficialCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficialCalendarView.swift; sourceTree = "<group>"; };
 		CBA31BFD23EAABF5004F5EDA /* DescribeMoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescribeMoodView.swift; sourceTree = "<group>"; };
 		CBC54E7424031F6500640A87 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
 		CBC54E76240320DD00640A87 /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
@@ -89,6 +107,8 @@
 		CBC54E7C2403924100640A87 /* RecordingDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingDataModel.swift; sourceTree = "<group>"; };
 		CBC54E7E240393CA00640A87 /* AudioHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioHelper.swift; sourceTree = "<group>"; };
 		CBC54E802403974000640A87 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		CBCEC9E5240CC36200CFD004 /* SuperHelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHelpView.swift; sourceTree = "<group>"; };
+		CBCEC9E7240CC81600CFD004 /* CalendarListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +210,8 @@
 		CB42C8A624042C730067280E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CBCEC9E2240CC23000CFD004 /* Help */,
+				CB98F6FC240CA3260059C4EA /* Calendar */,
 				CB98F6F9240CA1FE0059C4EA /* Settings */,
 				CB720B35240871A7006C4C87 /* ContentView */,
 				CB720B342408717C006C4C87 /* Authentication */,
@@ -298,6 +320,38 @@
 				CB98F6FA240CA2180059C4EA /* SettingsView.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		CB98F6FC240CA3260059C4EA /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				CB98F6FD240CA3400059C4EA /* Manager */,
+				CB98F70E240CA54D0059C4EA /* OfficialCalendarView.swift */,
+				CBCEC9E7240CC81600CFD004 /* CalendarListView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		CB98F6FD240CA3400059C4EA /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CB98F6FE240CA3790059C4EA /* RKDate.swift */,
+				CB98F700240CA38D0059C4EA /* RKCell.swift */,
+				CB98F702240CA3B90059C4EA /* RKWeekdayHeader.swift */,
+				CB98F704240CA3D00059C4EA /* RKMonth.swift */,
+				CB98F706240CA3DF0059C4EA /* RKViewController.swift */,
+				CB98F708240CA3EE0059C4EA /* RKManager.swift */,
+				CB98F70A240CA4010059C4EA /* RKColorSettings.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		CBCEC9E2240CC23000CFD004 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				CBCEC9E5240CC36200CFD004 /* SuperHelpView.swift */,
+			);
+			path = Help;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,6 +485,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB98F70F240CA54D0059C4EA /* OfficialCalendarView.swift in Sources */,
+				CBCEC9E6240CC36200CFD004 /* SuperHelpView.swift in Sources */,
+				CBCEC9E8240CC81600CFD004 /* CalendarListView.swift in Sources */,
 				CB01583D23FF304500229758 /* SelectEmotionView.swift in Sources */,
 				CB98F6FB240CA2180059C4EA /* SettingsView.swift in Sources */,
 				CB2D1B5E23E50FEF008BEFAF /* AppDelegate.swift in Sources */,
@@ -441,7 +498,11 @@
 				CB6808A523EBF70400768F7D /* GivePermissionsView.swift in Sources */,
 				CBC54E7524031F6500640A87 /* AudioRecorder.swift in Sources */,
 				CBA31BFE23EAABF5004F5EDA /* DescribeMoodView.swift in Sources */,
+				CB98F6FF240CA3790059C4EA /* RKDate.swift in Sources */,
 				CBC54E7B240338D900640A87 /* Extensions.swift in Sources */,
+				CB98F703240CA3B90059C4EA /* RKWeekdayHeader.swift in Sources */,
+				CB98F707240CA3DF0059C4EA /* RKViewController.swift in Sources */,
+				CB98F709240CA3EE0059C4EA /* RKManager.swift in Sources */,
 				CBC54E7F240393CA00640A87 /* AudioHelper.swift in Sources */,
 				CB98F6EE240B42730059C4EA /* TabBarUpdatedView.swift in Sources */,
 				CB98F6F0240B46520059C4EA /* ViewRouter.swift in Sources */,
@@ -450,7 +511,10 @@
 				CB98F6F5240B59D20059C4EA /* LoginView.swift in Sources */,
 				CB01584023FF31E800229758 /* Emotion.swift in Sources */,
 				CB5642AF23FF19FE0026B004 /* SelectMoodOfficialView.swift in Sources */,
+				CB98F70B240CA4010059C4EA /* RKColorSettings.swift in Sources */,
 				CB98F6F8240B5EDA0059C4EA /* OldContentView.swift in Sources */,
+				CB98F701240CA38D0059C4EA /* RKCell.swift in Sources */,
+				CB98F705240CA3D00059C4EA /* RKMonth.swift in Sources */,
 				CB2D1B6023E50FEF008BEFAF /* SceneDelegate.swift in Sources */,
 				CB2D1B6223E50FEF008BEFAF /* ContentView.swift in Sources */,
 				CB42C8AE240430C60067280E /* TabBarView.swift in Sources */,

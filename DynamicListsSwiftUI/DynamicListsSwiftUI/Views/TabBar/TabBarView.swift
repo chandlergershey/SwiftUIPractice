@@ -60,7 +60,7 @@ struct CalendarView: View {
 }
 
 
-struct HelpView: View {
+struct OfficialHelpView: View {
     var body: some View {
         NavigationView {
             Text("Help View")

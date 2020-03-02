@@ -18,13 +18,13 @@ struct TabBarUpdatedView: View {
                 Spacer()
                 
                 if self.viewRouter.currentView == "calendar" {
-                    Text("Calendar")
+                    OfficialCalendarView()
                 } else if self.viewRouter.currentView == "bandage" {
                     Text("Bandage")
                 } else if self.viewRouter.currentView == "mood"{
                     SelectMoodOfficialView()
                 } else if self.viewRouter.currentView == "trends" {
-                    Text("Trends")
+                    CalendarListView()
                 } else if self.viewRouter.currentView == "profile" {
                     Text("Profile")
                 }
