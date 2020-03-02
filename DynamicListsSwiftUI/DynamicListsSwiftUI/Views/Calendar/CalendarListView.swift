@@ -12,6 +12,12 @@ struct CalendarListView: View {
     
     @State var pickerSelectedItem = 0
     
+    @State var dataPoints: [[CGFloat]] = [
+        
+        [50, 100, 150, 100, 50],
+        [100, 50, 0, 150, 100]
+    ]
+    
     var body: some View {
         ZStack {
             Color.white.edgesIgnoringSafeArea(.all)
@@ -23,13 +29,13 @@ struct CalendarListView: View {
                 }.pickerStyle(SegmentedPickerStyle()).padding(.horizontal, 24)
                 
                 HStack (spacing: 16) {
-                    BarView(value: 50, iconName: "awesome_mood_icon", barColor: Color(#colorLiteral(red: 0.6109118462, green: 0.8651826978, blue: 0.2021178007, alpha: 1)))
-                    BarView(value: 100, iconName: "good_mood_icon", barColor: Color(#colorLiteral(red: 0, green: 0.8488311768, blue: 0.7249178886, alpha: 1)))
-                    BarView(value: 150, iconName: "okay_mood_icon", barColor: Color(#colorLiteral(red: 0.3445448875, green: 0.7081360221, blue: 0.8963118792, alpha: 1)))
-                    BarView(value: 150, iconName: "bad_mood_icon", barColor: Color(#colorLiteral(red: 0.9309601784, green: 0.4937891364, blue: 0.641892612, alpha: 1)))
-                    BarView(value: 150, iconName: "awful_mood_icon", barColor: Color(#colorLiteral(red: 0.6428464055, green: 0.4646516442, blue: 0.6883072853, alpha: 1)))
+                    BarView(value: dataPoints[pickerSelectedItem][0], iconName: "awesome_mood_icon", barColor: Color(#colorLiteral(red: 0.6109118462, green: 0.8651826978, blue: 0.2021178007, alpha: 1)))
+                    BarView(value: dataPoints[pickerSelectedItem][1], iconName: "good_mood_icon", barColor: Color(#colorLiteral(red: 0, green: 0.8488311768, blue: 0.7249178886, alpha: 1)))
+                    BarView(value: dataPoints[pickerSelectedItem][2], iconName: "okay_mood_icon", barColor: Color(#colorLiteral(red: 0.3445448875, green: 0.7081360221, blue: 0.8963118792, alpha: 1)))
+                    BarView(value: dataPoints[pickerSelectedItem][3], iconName: "bad_mood_icon", barColor: Color(#colorLiteral(red: 0.9309601784, green: 0.4937891364, blue: 0.641892612, alpha: 1)))
+                    BarView(value: dataPoints[pickerSelectedItem][4], iconName: "awful_mood_icon", barColor: Color(#colorLiteral(red: 0.6428464055, green: 0.4646516442, blue: 0.6883072853, alpha: 1)))
                     
-                }.padding(.top, 15)
+                }.padding(.top, 15).animation(.default)
             }
             
         }
