@@ -25,7 +25,8 @@ struct SelectMoodOfficialView: View {
             VStack{
                 ForEach(moodSelection, id: \.mood){
                     mood in HStack{
-                        NavigationLink(destination: SelectEmotionView().navigationBarTitle("x").navigationBarHidden(true)){
+                        NavigationLink(destination: SelectEmotionView()){
+                            // .navigationBarTitle("x").navigationBarHidden(true)
                             VStack {
                             Image(mood.icon).renderingMode(.original).resizable().frame(width: 70, height: 70)
                                 Text(mood.mood)

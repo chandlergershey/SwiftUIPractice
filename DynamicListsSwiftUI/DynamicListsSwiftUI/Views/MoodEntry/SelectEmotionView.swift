@@ -19,6 +19,7 @@ struct MultiSelectRow : View {
     }
     
     var body: some View {
+        
         HStack{
             Text(self.emotion.name).font(.title).fontWeight(.bold)
             Spacer()
@@ -45,7 +46,8 @@ struct SelectEmotionView: View {
             List(emotions, selection: $selectedRows) { emotion in
                 MultiSelectRow(emotion: emotion, selectedItems: self.$selectedRows)
             }.navigationBarTitle(
-                Text("\(selectedRows.count) Emotions Selected")
+                //Text("\(selectedRows.count) Emotions Selected")
+                Text("Select Emotions")
             )
         }
     }

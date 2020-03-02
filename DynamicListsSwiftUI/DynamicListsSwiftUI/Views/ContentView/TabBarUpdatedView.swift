@@ -64,7 +64,7 @@ struct TabBarUpdatedView: View {
                     Button(action: { self.singleIsPresented.toggle() }) {
                         Image(systemName: "plus.circle.fill").padding().background(Color.blue).clipShape(Circle()).font(.largeTitle).foregroundColor(.white)
                     }.sheet(isPresented: self.$singleIsPresented){
-                        SelectMoodOfficialView()
+                        BeginMoodSelectionView()
                     }
  
                     
