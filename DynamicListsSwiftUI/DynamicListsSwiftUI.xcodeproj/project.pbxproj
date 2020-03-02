@@ -23,6 +23,10 @@
 		CB6808A523EBF70400768F7D /* GivePermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6808A423EBF70400768F7D /* GivePermissionsView.swift */; };
 		CB98F6EE240B42730059C4EA /* TabBarUpdatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB98F6ED240B42730059C4EA /* TabBarUpdatedView.swift */; };
 		CB98F6F0240B46520059C4EA /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB98F6EF240B46520059C4EA /* ViewRouter.swift */; };
+		CB98F6F2240B53830059C4EA /* BeginMoodSelectionMood.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB98F6F1240B53830059C4EA /* BeginMoodSelectionMood.swift */; };
+		CB98F6F5240B59D20059C4EA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB98F6F4240B59D20059C4EA /* LoginView.swift */; };
+		CB98F6F8240B5EDA0059C4EA /* OldContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB98F6F7240B5EDA0059C4EA /* OldContentView.swift */; };
+		CB98F6FB240CA2180059C4EA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB98F6FA240CA2180059C4EA /* SettingsView.swift */; };
 		CBA31BFE23EAABF5004F5EDA /* DescribeMoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA31BFD23EAABF5004F5EDA /* DescribeMoodView.swift */; };
 		CBC54E7524031F6500640A87 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC54E7424031F6500640A87 /* AudioRecorder.swift */; };
 		CBC54E77240320DD00640A87 /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC54E76240320DD00640A87 /* RecordingView.swift */; };
@@ -73,6 +77,10 @@
 		CB6808A423EBF70400768F7D /* GivePermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GivePermissionsView.swift; sourceTree = "<group>"; };
 		CB98F6ED240B42730059C4EA /* TabBarUpdatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarUpdatedView.swift; sourceTree = "<group>"; };
 		CB98F6EF240B46520059C4EA /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		CB98F6F1240B53830059C4EA /* BeginMoodSelectionMood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginMoodSelectionMood.swift; sourceTree = "<group>"; };
+		CB98F6F4240B59D20059C4EA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CB98F6F7240B5EDA0059C4EA /* OldContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldContentView.swift; sourceTree = "<group>"; };
+		CB98F6FA240CA2180059C4EA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		CBA31BFD23EAABF5004F5EDA /* DescribeMoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescribeMoodView.swift; sourceTree = "<group>"; };
 		CBC54E7424031F6500640A87 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
 		CBC54E76240320DD00640A87 /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
@@ -182,6 +190,7 @@
 		CB42C8A624042C730067280E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CB98F6F9240CA1FE0059C4EA /* Settings */,
 				CB720B35240871A7006C4C87 /* ContentView */,
 				CB720B342408717C006C4C87 /* Authentication */,
 				CB720B3324087158006C4C87 /* MoodEntry */,
@@ -258,6 +267,7 @@
 				CB3F177523EA985F00095FD7 /* SelectMoodView.swift */,
 				CB5642AE23FF19FE0026B004 /* SelectMoodOfficialView.swift */,
 				CB01583C23FF304500229758 /* SelectEmotionView.swift */,
+				CB98F6F1240B53830059C4EA /* BeginMoodSelectionMood.swift */,
 			);
 			path = MoodEntry;
 			sourceTree = "<group>";
@@ -266,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				CB6808A423EBF70400768F7D /* GivePermissionsView.swift */,
+				CB98F6F4240B59D20059C4EA /* LoginView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -276,8 +287,17 @@
 				CB2D1B6123E50FEF008BEFAF /* ContentView.swift */,
 				CB98F6ED240B42730059C4EA /* TabBarUpdatedView.swift */,
 				CB98F6EF240B46520059C4EA /* ViewRouter.swift */,
+				CB98F6F7240B5EDA0059C4EA /* OldContentView.swift */,
 			);
 			path = ContentView;
+			sourceTree = "<group>";
+		};
+		CB98F6F9240CA1FE0059C4EA /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CB98F6FA240CA2180059C4EA /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,9 +432,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB01583D23FF304500229758 /* SelectEmotionView.swift in Sources */,
+				CB98F6FB240CA2180059C4EA /* SettingsView.swift in Sources */,
 				CB2D1B5E23E50FEF008BEFAF /* AppDelegate.swift in Sources */,
 				CB3F177623EA985F00095FD7 /* SelectMoodView.swift in Sources */,
 				CBC54E79240323D500640A87 /* RecordingListViewComponent.swift in Sources */,
+				CB98F6F2240B53830059C4EA /* BeginMoodSelectionMood.swift in Sources */,
 				CBC54E77240320DD00640A87 /* RecordingView.swift in Sources */,
 				CB6808A523EBF70400768F7D /* GivePermissionsView.swift in Sources */,
 				CBC54E7524031F6500640A87 /* AudioRecorder.swift in Sources */,
@@ -425,8 +447,10 @@
 				CB98F6F0240B46520059C4EA /* ViewRouter.swift in Sources */,
 				CBC54E7D2403924100640A87 /* RecordingDataModel.swift in Sources */,
 				CBC54E812403974000640A87 /* AudioPlayer.swift in Sources */,
+				CB98F6F5240B59D20059C4EA /* LoginView.swift in Sources */,
 				CB01584023FF31E800229758 /* Emotion.swift in Sources */,
 				CB5642AF23FF19FE0026B004 /* SelectMoodOfficialView.swift in Sources */,
+				CB98F6F8240B5EDA0059C4EA /* OldContentView.swift in Sources */,
 				CB2D1B6023E50FEF008BEFAF /* SceneDelegate.swift in Sources */,
 				CB2D1B6223E50FEF008BEFAF /* ContentView.swift in Sources */,
 				CB42C8AE240430C60067280E /* TabBarView.swift in Sources */,

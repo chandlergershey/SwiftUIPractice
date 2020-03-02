@@ -61,7 +61,7 @@ struct TabBarUpdatedView: View {
                         self.viewRouter.currentView = "profile"
                     }
                     
-                }.frame(width: geometry.size.width, height: geometry.size.height/10).background(Color.white.shadow(radius: 2))
+                }.frame(width: geometry.size.width, height: geometry.size.height/10).background(Color.white.shadow(radius: CGFloat(2.0)))
             }.edgesIgnoringSafeArea(.bottom)
         }
     }
