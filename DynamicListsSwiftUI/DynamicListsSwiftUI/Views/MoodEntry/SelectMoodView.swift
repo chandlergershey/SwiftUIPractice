@@ -22,7 +22,7 @@ struct SelectMoodView: View {
                 }
                 HStack{
                     VStack {
-                        NavigationLink(destination: DescribeMoodView(), tag: 4, selection: self.$selection){
+                        NavigationLink(destination: RecordingView(audioRecorder: AudioRecorder()), tag: 4, selection: self.$selection){
                             Text("")
                         }
                         Button(action: {
@@ -33,7 +33,7 @@ struct SelectMoodView: View {
                         }
                     }
                     VStack {
-                        NavigationLink(destination: DescribeMoodView(), tag: 5, selection: self.$selection){
+                        NavigationLink(destination: RecordingView(audioRecorder: AudioRecorder()), tag: 5, selection: self.$selection){
                             Text("")
                         }
                         Button(action: {
@@ -46,7 +46,7 @@ struct SelectMoodView: View {
                 }
                 HStack{
                     VStack {
-                        NavigationLink(destination: DescribeMoodView(), tag: 3, selection: self.$selection){
+                        NavigationLink(destination: RecordingView(audioRecorder: AudioRecorder()), tag: 3, selection: self.$selection){
                             Text("")
                         }
                         Button(action: {
@@ -59,7 +59,7 @@ struct SelectMoodView: View {
                 }
                 HStack{
                     VStack {
-                        NavigationLink(destination: DescribeMoodView(), tag: 2, selection: self.$selection){
+                        NavigationLink(destination: RecordingView(audioRecorder: AudioRecorder()), tag: 2, selection: self.$selection){
                             Text("")
                         }
                         Button(action: {
@@ -70,7 +70,7 @@ struct SelectMoodView: View {
                         }
                     }
                     VStack {
-                        NavigationLink(destination: DescribeMoodView(), tag: 1, selection: self.$selection){
+                        NavigationLink(destination: RecordingView(audioRecorder: AudioRecorder()), tag: 1, selection: self.$selection){
                             Text("")
                         }
                         Button(action: {

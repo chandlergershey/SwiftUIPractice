@@ -11,6 +11,7 @@ import SwiftUI
 struct TabBarUpdatedView: View {
     @ObservedObject var viewRouter = ViewRouter()
     @State var singleIsPresented = false
+    var rkManager1 = RKManager(calendar: Calendar.current, minimumDate: Date(), maximumDate: Date().addingTimeInterval(60*60*24*365), mode: 0)
     
     var body: some View {
         GeometryReader { geometry in
@@ -19,17 +20,17 @@ struct TabBarUpdatedView: View {
                 Spacer()
                 
                 if self.viewRouter.currentView == "calendar" {
-                    OfficialCalendarView()
+                    RKViewController(isPresented: self.$singleIsPresented, rkManager: self.rkManager1)
                 } else if self.viewRouter.currentView == "bandage" {
                     Text("Bandage")
                 }
                 else if self.viewRouter.currentView == "mood"{
-                    SelectMoodOfficialView()
+                    BeginMoodSelectionView()
                 }
                 else if self.viewRouter.currentView == "trends" {
                     CalendarListView()
                 } else if self.viewRouter.currentView == "profile" {
-                    Text("Profile")
+                    SettingsView()
                 }
                 
                 Spacer()
@@ -90,7 +91,7 @@ struct TabBarUpdatedView: View {
                     }
                     
                     // Profile Tab
-                    Image(systemName: "person").resizable().aspectRatio(contentMode: .fit).padding(20).frame(width: geometry.size.width/5, height: 75).foregroundColor(self.viewRouter.currentView == "profile" ? .blue : .black).onTapGesture {
+                    Image(systemName: "gear").resizable().aspectRatio(contentMode: .fit).padding(20).frame(width: geometry.size.width/5, height: 75).foregroundColor(self.viewRouter.currentView == "profile" ? .blue : .black).onTapGesture {
                         self.viewRouter.currentView = "profile"
                     }
                     

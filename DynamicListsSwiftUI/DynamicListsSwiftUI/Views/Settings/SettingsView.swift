@@ -10,7 +10,16 @@ import SwiftUI
 
 struct SettingsView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List {
+                Text("Reminders")
+                Text("Change Theme")
+                Text("Privacy and Permissions")
+                Text("About Nationwide Children's Hospital")
+                Text("How to use the app")
+                Text("Sign out")
+            }.navigationBarTitle("Settings")
+        }
     }
 }
 
